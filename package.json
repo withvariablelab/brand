@@ -1,6 +1,6 @@
 {
   "name": "@variablelab/brand",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Variable Lab's brand guideline, design tokens and shared assets",
   "license": "MIT",
   "author": "rcrd <ricardo@variable.land>",
