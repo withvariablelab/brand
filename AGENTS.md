@@ -28,3 +28,14 @@ Edit the source, then run `pnpm build`. `pnpm check` exits 1 when a generated fi
 | `assets/logo.svg` | `.github/readme/logo.svg`, the Logo on `ground` for the README |
 
 Inside Markdown, a generated block sits between `<!-- build:<name> -->` and `<!-- /build:<name> -->`. Write around the markers, never inside them. Whole generated files are marked `linguist-generated` in `.gitattributes`; a new one gets a line there too.
+
+## Tools
+
+mise installs node and pnpm, locally and in CI: run `mise install`, then `pnpm install`. `mise.toml` names the versions and `mise.lock` pins them with checksums; after changing a version in `mise.toml`, run `mise lock` and commit both.
+
+## Releasing
+
+- Changes to `skills/`, `tokens/`, `assets/`, `templates/`, `BRAND-USE.md` or the `exports` in `package.json` carry a changeset: run `pnpm changeset`. Changes to the README, LICENSE, this file or CI don't.
+- Major: a token, an export path or an asset path is removed or renamed. Minor: one is added, or a chapter. Patch: a value or a text changes.
+- Merging a change with a changeset to `main` opens or updates the "chore: update versions" pull request. Merging that pull request publishes to npm through trusted publishing.
+- Agents install the skill from `main` on GitHub, not from npm, so a change to `skills/` reaches them when it merges, before any release.
