@@ -1,6 +1,6 @@
 # Iconography
 
-Two families, and nothing else: filled shapes, which are the Signs and the Class stamps ([product-brand.md](product-brand.md)), and outlined UI icons. No emoji anywhere.
+Two families, and nothing else: filled shapes, which are the Signs and the Class stamps ([project-brand.md](project-brand.md)), and outlined UI icons. No emoji anywhere.
 
 ## UI icons
 
@@ -14,7 +14,7 @@ Two families, and nothing else: filled shapes, which are the Signs and the Class
 | Copy | Copies a command. | `<rect x="5.75" y="5.75" width="8.5" height="8.5"/>` and `<path d="M2.75 10.25V2.75h7.5"/>` |
 | Copied | Replaces Copy for a moment after a copy. | `<path d="M3 8.5l3.25 3.25L13 5"/>` |
 
-A new icon follows the stroke rules. Before it ships, set it at 14px beside every Product's `brand/sign.svg` and both Class stamps: it must not be mistaken for any of them.
+A new icon follows the stroke rules. Before it ships, set it at 14px beside every Project's `brand/sign.svg` and both Class stamps: it must not be mistaken for any of them.
 
 ## Shapes beside text
 
