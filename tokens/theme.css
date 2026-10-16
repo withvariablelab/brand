@@ -1,0 +1,21 @@
+/* Generated from tokens/tokens.json by scripts/build.ts. Edit the JSON, not this file. */
+@import "./tokens.css";
+
+@theme inline {
+  --color-ground: var(--vlab-ground);
+  --color-surface: var(--vlab-surface);
+  --color-ink: var(--vlab-ink);
+  --color-ink-muted: var(--vlab-ink-muted);
+  --color-dim: var(--vlab-dim);
+  --color-rule: var(--vlab-rule);
+  --color-rule-strong: var(--vlab-rule-strong);
+  --color-logo: var(--vlab-logo);
+  --color-syntax-text: var(--vlab-syntax-text);
+  --color-syntax-keyword: var(--vlab-syntax-keyword);
+  --color-syntax-function: var(--vlab-syntax-function);
+  --color-syntax-string: var(--vlab-syntax-string);
+  --color-syntax-comment: var(--vlab-syntax-comment);
+  --color-syntax-gutter: var(--vlab-syntax-gutter);
+  --font-sans: var(--vlab-font-sans);
+  --font-mono: var(--vlab-font-mono);
+}

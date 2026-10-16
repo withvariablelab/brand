@@ -1,0 +1,19 @@
+/* Generated from tokens/tokens.json by scripts/build.ts. Edit the JSON, not this file. */
+:root {
+  --vlab-ground: #14120e;
+  --vlab-surface: #1b1914;
+  --vlab-ink: #f3f0e8;
+  --vlab-ink-muted: #bdb7ab;
+  --vlab-dim: #a39e93;
+  --vlab-rule: #2e2a24;
+  --vlab-rule-strong: #3a362f;
+  --vlab-logo: #36d399;
+  --vlab-syntax-text: #f3f0e8;
+  --vlab-syntax-keyword: #a39e93;
+  --vlab-syntax-function: #e8bf98;
+  --vlab-syntax-string: #a3d9ca;
+  --vlab-syntax-comment: #8a857b;
+  --vlab-syntax-gutter: #5f5a52;
+  --vlab-font-sans: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  --vlab-font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+}
