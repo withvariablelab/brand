@@ -6,13 +6,13 @@ Variable Lab's brand guideline, design tokens and shared assets, the package `@v
 
 - `skills/vlab-brand/`: the guideline, as an Agent Skill. `SKILL.md` routes each task to one chapter; `glossary.md` holds the terms.
 - `tokens/tokens.json`: the only source of colors and fonts.
-- `assets/`: the Logo and the Class stamps. No Product's Sign lives here.
-- `templates/product/brand/`: what a Product copies into its own `brand/` folder.
+- `assets/`: the Logo and the Class stamps. No Project's Sign lives here.
+- `templates/project/brand/`: what a Project copies into its own `brand/` folder.
 - `.github/readme/`: the images in the README. Generated.
 
 ## Rules
 
-- The guideline states rules for every Product. One Product's specifics, such as its Sign or its copy, belong in that Product's repository or in the site that shows it.
+- The guideline states rules for every Project. One Project's specifics, such as its Sign or its copy, belong in that Project's repository or in the site that shows it.
 - Before changing a chapter, read [principles.md](./skills/vlab-brand/principles.md): every chapter follows it.
 - The skill folder stands alone. An installed skill carries only `skills/vlab-brand/`, so its chapters link only to each other and state values, such as hex codes, instead of pointing outside the folder.
 - Everything here is written in English, for any harness: say "agents", not one tool's name, and keep install commands free of agent flags.
@@ -23,7 +23,7 @@ Edit the source, then run `pnpm build`. `pnpm check` exits 1 when a generated fi
 
 | Source | Generated |
 | --- | --- |
-| `tokens/tokens.json` | `tokens/tokens.css`, `tokens/theme.css`, the tables in `skills/vlab-brand/color.md`, the palette in `README.md` and its swatches in `.github/readme/`, `templates/product/brand/sign-readme.svg` |
+| `tokens/tokens.json` | `tokens/tokens.css`, `tokens/theme.css`, the tables in `skills/vlab-brand/color.md`, the palette in `README.md` and its swatches in `.github/readme/`, `templates/project/brand/sign-readme.svg` |
 | `assets/stamps/*.svg` | The stamp previews in `.github/readme/` |
 | `assets/logo.svg` | `.github/readme/logo.svg`, the Logo on `ground` for the README |
 

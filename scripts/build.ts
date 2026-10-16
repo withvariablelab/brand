@@ -2,7 +2,7 @@
 //   tokens/tokens.json  → tokens/tokens.css, tokens/theme.css,
 //                         the tables in skills/vlab-brand/color.md (an installed skill can't read tokens.json),
 //                         the palette in README.md and its swatches in .github/readme/,
-//                         templates/product/brand/sign-readme.svg
+//                         templates/project/brand/sign-readme.svg
 //   assets/stamps/*.svg → the stamp previews in .github/readme/
 //   assets/logo.svg     → .github/readme/logo.svg
 // Generated blocks inside Markdown sit between <!-- build:<name> --> and <!-- /build:<name> -->.
@@ -54,7 +54,7 @@ for (const file of stamps) {
   if (!d) throw new Error(`assets/stamps/${file}: no path d attribute`);
   outputs[`.github/readme/stamp-${file}`] = onGround(d);
 }
-outputs["templates/product/brand/sign-readme.svg"] = onGround("", "<!-- Paste the d attribute of sign.svg into the path's d. -->");
+outputs["templates/project/brand/sign-readme.svg"] = onGround("", "<!-- Paste the d attribute of sign.svg into the path's d. -->");
 
 // The Logo on a ground square with a sixth of its height around it, so it never sits on a light background.
 const logo = read("assets/logo.svg");

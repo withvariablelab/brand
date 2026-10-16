@@ -1,10 +1,10 @@
-# Product brand
+# Project brand
 
-A Product's brand is its Sign, and nothing more. This chapter says how a Sign is drawn and where it lives. Which Sign a Product has belongs to the Product.
+A Project's brand is its Sign, and nothing more. This chapter says how a Sign is drawn and where it lives. Which Sign a Project has belongs to the Project.
 
 ## Class stamp first
 
-A new Product carries its Class stamp until it earns a Sign. It never gets a letter, a color or a second house in the meantime. Both stamps are in the brand repository, in `assets/stamps/`.
+A new Project carries its Class stamp until it earns a Sign. It never gets a letter, a color or a second house in the meantime. Both stamps are in the brand repository, in `assets/stamps/`.
 
 | Class | File | The shape |
 | --- | --- | --- |
@@ -15,13 +15,13 @@ A new Product carries its Class stamp until it earns a Sign. It never gets a let
 
 - `viewBox 0 0 24 24`, filled geometry on a 4px module, in one ink: `ink`, written as `fill="currentColor"`.
 - Straight rectangles only: no circles, no letters, no rounded corners.
-- It draws an idea of what the Product does. It is never a mascot, an animal or a picture of the name.
-- **Covered-names test**: at 16px, with the names hidden, every Sign and Class stamp is told apart from every other. A new Sign passes it before it ships, against every other Product's `brand/sign.svg` and both Class stamps.
+- It draws an idea of what the Project does. It is never a mascot, an animal or a picture of the name.
+- **Covered-names test**: at 16px, with the names hidden, every Sign and Class stamp is told apart from every other. A new Sign passes it before it ships, against every other Project's `brand/sign.svg` and both Class stamps.
 - If a new Sign can't pass, the family has a problem: review the Signs together. A Sign is never redrawn alone.
 
-## The Product's `brand/` folder
+## The Project's `brand/` folder
 
-Once it has a Sign, a Product keeps it in a `brand/` folder next to its `package.json`. Start from `templates/product/brand/` in the brand repository.
+Once it has a Sign, a Project keeps it in a `brand/` folder next to its `package.json`. Start from `templates/project/brand/` in the brand repository.
 
 | File | What it holds |
 | --- | --- |

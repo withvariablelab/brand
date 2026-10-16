@@ -17,7 +17,7 @@ A dark, warm palette in flat planes.
 | logo | `#36d399` | The Logo, and nothing else. |
 <!-- /build:color -->
 
-- Green lives only in the Logo. A Product has no color of its own.
+- Green lives only in the Logo. A Project has no color of its own.
 - Signs and Class stamps are `ink`: one ink.
 - Contrast on `ground` and `surface`: `ink` 16:1, `ink-muted` 9:1, `dim` 6.5:1. All text stays at 4.5:1 or more. Only decorative marks hidden from assistive technology, such as line numbers and the `$` prompt, sit below that.
 

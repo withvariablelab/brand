@@ -9,8 +9,8 @@
 ## At a glance
 
 - **Dark, warm and flat.** One dark palette, no gradients, no shadows, square corners.
-- **One Signature.** The green Logo with "Variable Land" beside it. No Product carries it.
-- **A Sign per Product.** A Product starts with its Class stamp and earns a Sign: filled rectangles in one ink.
+- **One Signature.** The green Logo with "Variable Land" beside it. No Project carries it.
+- **A Sign per Project.** A Project starts with its Class stamp and earns a Sign: filled rectangles in one ink.
 - **Facts, in English.** Short declarative sentences a reader can check in the code.
 
 ## Palette
@@ -53,7 +53,7 @@ IBM Plex Sans for text and IBM Plex Mono for code, both in 400 and 500. Two weig
   <img src=".github/readme/stamp-library.svg" width="48" height="48" alt="The Library Class stamp">
 </p>
 
-The Class stamps of an App and a Library: a body on a base, and a closed frame. Each Product's Sign is drawn on the same 24×24 grid and lives in that Product's own repository, in `brand/`.
+The Class stamps of an App and a Library: a body on a base, and a closed frame. Each Project's Sign is drawn on the same 24×24 grid and lives in that Project's own repository, in `brand/`.
 
 ## The guideline
 
@@ -63,9 +63,9 @@ The Class stamps of an App and a Library: a body on a base, and a closed frame. 
 | [Logo](skills/vlab-brand/logo.md) | Color, the Signature, sizes and what to avoid. |
 | [Color](skills/vlab-brand/color.md) | The palette, soft Vesper and contrast. |
 | [Typography](skills/vlab-brand/typography.md) | Families, scale and text flow. |
-| [Voice](skills/vlab-brand/voice.md) | Tone, names and how to say what a Product is. |
+| [Voice](skills/vlab-brand/voice.md) | Tone, names and how to say what a Project is. |
 | [Iconography](skills/vlab-brand/iconography.md) | UI icons and shapes beside text. |
-| [Product brand](skills/vlab-brand/product-brand.md) | Class stamps, how a Sign is drawn and a Product's `brand/` folder. |
+| [Project brand](skills/vlab-brand/project-brand.md) | Class stamps, how a Sign is drawn and a Project's `brand/` folder. |
 
 The guideline is also an [Agent Skill](https://agentskills.io), `vlab-brand`, so agents read the same text people do.
 
