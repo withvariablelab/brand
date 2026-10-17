@@ -1,5 +1,13 @@
 # @variablelab/brand
 
+## 0.3.1
+
+### Patch Changes
+
+- [#11](https://github.com/withvariablelab/brand/pull/11) [`9bf78b0`](https://github.com/withvariablelab/brand/commit/9bf78b0da28012b634c6a95e6a07255efe4edd3b) Thanks [@rqbazan](https://github.com/rqbazan)! - The Typography chapter says that a step's `family` in `tokens.json` names a font token, `sans` or `mono`, and that its stack is that token's `value` under `font`.
+
+- [#9](https://github.com/withvariablelab/brand/pull/9) [`908b3bb`](https://github.com/withvariablelab/brand/commit/908b3bb08cb656a338f132f977d2ed913f6cbd6d) Thanks [@rqbazan](https://github.com/rqbazan)! - The Iconography chapter keeps the rules for drawing a UI icon and no longer lists icons: the Copy and Copied icons, with their geometry, move to the site that uses them.
+
 ## 0.3.0
 
 ### Minor Changes
