@@ -35,8 +35,8 @@ Code is colored with soft Vesper: the roles and the peach and mint accents of [V
 | --- | --- | --- | --- |
 | <img src=".github/readme/syntax-text.svg" width="48" height="24" alt=""> | `text` | `#f3f0e8` | Identifiers, punctuation and flags. |
 | <img src=".github/readme/syntax-keyword.svg" width="48" height="24" alt=""> | `keyword` | `#a39e93` | `import`, `from`, `const`, `export`, `as` and operators; JSX attributes; a code block's file name. |
-| <img src=".github/readme/syntax-function.svg" width="48" height="24" alt=""> | `function` | `#e8bf98` | Function calls and declarations; HTML tags and attributes; the first token of a shell command (`pnpm`). |
-| <img src=".github/readme/syntax-string.svg" width="48" height="24" alt=""> | `string` | `#a3d9ca` | Strings; the arguments of a shell command (`init`, package names). |
+| <img src=".github/readme/syntax-function.svg" width="48" height="24" alt=""> | `function` | `#e8bf98` | Function calls and declarations; numbers, booleans, types and other `support.*` names; HTML tags and attributes; JSON keys; the first token of a shell command (`pnpm`). |
+| <img src=".github/readme/syntax-string.svg" width="48" height="24" alt=""> | `string` | `#a3d9ca` | Strings, symbols and `constant.other.key`; the arguments of a shell command (`init`, package names). |
 | <img src=".github/readme/syntax-comment.svg" width="48" height="24" alt=""> | `comment` | `#8a857b` | Comments; a code block's language label. |
 | <img src=".github/readme/syntax-gutter.svg" width="48" height="24" alt=""> | `gutter` | `#5f5a52` | Line numbers and the `$` prompt. |
 <!-- /build:syntax -->

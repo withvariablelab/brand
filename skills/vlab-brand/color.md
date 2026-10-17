@@ -23,15 +23,15 @@ A dark, warm palette in flat planes.
 
 ## Syntax: soft Vesper
 
-Code takes its roles and its two accents, peach and mint, from [Vesper](https://github.com/raunofreiberg/vesper), with the accents desaturated. The neutrals and the background are the page's: Vesper's `#101010` and cool grays clashed with the warm `ground`. Code blocks sit on `surface`. Whatever Vesper leaves in its default color is `text`.
+Code takes its roles and its two accents, peach and mint, from [Vesper](https://github.com/raunofreiberg/vesper), with the accents desaturated. The neutrals and the background are the page's: Vesper's `#101010` and cool grays clashed with the warm `ground`. Code blocks sit on `surface`. Each scope Vesper colors takes the token that has its Vesper color in the table. Whatever Vesper leaves in its default color is `text`, and so is its third accent (`#FF8080`: invalid code, deleted lines, some JavaScript module and class names): the brand keeps two accents.
 
 <!-- build:syntax -->
 | Token | Value | Vesper | Use |
 | --- | --- | --- | --- |
 | text | `#f3f0e8` | `#FFFFFF` | Identifiers, punctuation and flags. |
 | keyword | `#a39e93` | `#A0A0A0` | `import`, `from`, `const`, `export`, `as` and operators; JSX attributes; a code block's file name. |
-| function | `#e8bf98` | `#FFC799` | Function calls and declarations; HTML tags and attributes; the first token of a shell command (`pnpm`). |
-| string | `#a3d9ca` | `#99FFE4` | Strings; the arguments of a shell command (`init`, package names). |
+| function | `#e8bf98` | `#FFC799` | Function calls and declarations; numbers, booleans, types and other `support.*` names; HTML tags and attributes; JSON keys; the first token of a shell command (`pnpm`). |
+| string | `#a3d9ca` | `#99FFE4` | Strings, symbols and `constant.other.key`; the arguments of a shell command (`init`, package names). |
 | comment | `#8a857b` | `#8b8b8b94` | Comments; a code block's language label. |
 | gutter | `#5f5a52` | `#505050` | Line numbers and the `$` prompt. |
 <!-- /build:syntax -->

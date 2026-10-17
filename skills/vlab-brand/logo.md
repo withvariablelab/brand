@@ -14,7 +14,7 @@ File: `assets/logo.svg` in the brand repository, `viewBox 0 0 402.02 468.12`.
 
 - Another color, an outline, or a background other than `ground`.
 - "Variable Lab" beside it: the name beside the Logo is Variable Land.
-- A Project using it, or the Logo set beside a Sign.
+- A Project using it as its own mark, or the Logo locked up with a Sign. A Project's page or docs still carry the Signature, set apart from the Sign.
 - A drawn wordmark or any other variant.
 
 ## Linking it
