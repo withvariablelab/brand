@@ -1,5 +1,11 @@
 # @variablelab/brand
 
+## 0.2.1
+
+### Patch Changes
+
+- [#5](https://github.com/withvariablelab/brand/pull/5) [`f10c68a`](https://github.com/withvariablelab/brand/commit/f10c68abd66cf3f9c1b28555071b4604bace7149) Thanks [@rqbazan](https://github.com/rqbazan)! - Code coloring follows Vesper's scopes with the two accents: numbers, booleans, types, `support.*` names and JSON keys take `function`, symbols and `constant.other.key` take `string`, and Vesper's third accent is `text`. The Logo chapter says that a Project's page or docs carry the Signature, set apart from the Sign.
+
 ## 0.2.0
 
 ### Minor Changes
