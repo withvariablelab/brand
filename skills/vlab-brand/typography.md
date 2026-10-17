@@ -37,7 +37,7 @@ The bigger the size, the tighter the tracking: each step carries its own value.
 
 - CSS: `@variablelab/brand/tokens.css` defines five properties per step on `:root`: `--vlab-type-<step>-size`, `-line-height`, `-weight`, `-tracking` and `-family`, such as `--vlab-type-title-size`. A step with no line height has no `-line-height`. `-family` is `var(--vlab-font-sans)` or `var(--vlab-font-mono)`.
 - Tailwind v4: `@import "@variablelab/brand/theme.css"` adds each step as a font size with its line height, tracking and weight (`text-title`, `text-meta`). The family goes beside it: `text-meta font-mono`.
-- Anything else, such as a server-rendered image: read `type` in `@variablelab/brand/tokens.json`.
+- Anything else, such as a server-rendered image: read `type` in `@variablelab/brand/tokens.json`. There a step's `family` is the name of a font token, `sans` or `mono`, not a stack: the stack is that token's `value` under `font`.
 
 ## Text flow
 
