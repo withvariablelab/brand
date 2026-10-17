@@ -38,6 +38,6 @@ Code takes its roles and its two accents, peach and mint, from [Vesper](https://
 
 ## In code
 
-- CSS: `@variablelab/brand/tokens.css` defines `--vlab-<token>`, `--vlab-syntax-<token>` and `--vlab-font-<token>` on `:root`.
+- CSS: `@variablelab/brand/tokens.css` defines `--vlab-<token>`, `--vlab-syntax-<token>` and `--vlab-font-<token>` on `:root`, and the type scale's `--vlab-type-*` ([typography.md](typography.md)).
 - Tailwind v4: `@import "@variablelab/brand/theme.css"` adds the colors `ground`, `ink`, `syntax-keyword` and the rest, and the fonts `sans` and `mono` (`bg-ground`, `text-dim`, `font-mono`).
 - Anything else, such as a server-rendered image: read `@variablelab/brand/tokens.json`.

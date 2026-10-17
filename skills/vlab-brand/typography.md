@@ -11,6 +11,7 @@ The files come from Fontsource (`@fontsource/ibm-plex-sans`, `@fontsource/ibm-pl
 
 ## Scale
 
+<!-- build:scale -->
 | Step | Size / line height | Weight | Tracking | Family |
 | --- | --- | --- | --- | --- |
 | display | 42px / 1 | 500 | `-0.035em` | sans |
@@ -19,13 +20,24 @@ The files come from Fontsource (`@fontsource/ibm-plex-sans`, `@fontsource/ibm-pl
 | lead | 20px / 1.3 | 400 | `-0.02em` | sans |
 | body | 16px / 1.55 | 400 | 0 | sans |
 | small | 14px / 1.5 | 400 | 0 | sans |
-| ui | 13px | 400, 500 for a name | 0 | sans |
-| inline code | 13px | 400 | 0 | mono, in `ink` |
+| ui | 13px | 400 | 0 | sans |
+| inline-code | 13px | 400 | 0 | mono |
 | code | 12.5px / 20px | 400 | 0 | mono |
 | meta | 12px | 400 | 0 | mono |
 | label | 11px | 400 | 0 | mono |
+<!-- /build:scale -->
+
+- `ui` sets 500 for a name.
+- `inline-code` is set in `ink`.
+- A step with no line height (`ui`, `inline-code`, `meta`, `label`) keeps the one of the text it sits in.
 
 The bigger the size, the tighter the tracking: each step carries its own value.
+
+## In code
+
+- CSS: `@variablelab/brand/tokens.css` defines five properties per step on `:root`: `--vlab-type-<step>-size`, `-line-height`, `-weight`, `-tracking` and `-family`, such as `--vlab-type-title-size`. A step with no line height has no `-line-height`. `-family` is `var(--vlab-font-sans)` or `var(--vlab-font-mono)`.
+- Tailwind v4: `@import "@variablelab/brand/theme.css"` adds each step as a font size with its line height, tracking and weight (`text-title`, `text-meta`). The family goes beside it: `text-meta font-mono`.
+- Anything else, such as a server-rendered image: read `type` in `@variablelab/brand/tokens.json`.
 
 ## Text flow
 

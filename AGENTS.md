@@ -5,7 +5,7 @@ Variable Lab's brand guideline, design tokens and shared assets, the package `@v
 ## Layout
 
 - `skills/vlab-brand/`: the guideline, as an Agent Skill. `SKILL.md` routes each task to one chapter; `glossary.md` holds the terms.
-- `tokens/tokens.json`: the only source of colors and fonts.
+- `tokens/tokens.json`: the only source of colors, fonts and the type scale.
 - `assets/`: the Logo and the Class stamps. No Project's Sign lives here.
 - `templates/project/brand/`: what a Project copies into its own `brand/` folder.
 - `.github/readme/`: the images in the README. Generated.
@@ -23,7 +23,7 @@ Edit the source, then run `pnpm build`. `pnpm check` exits 1 when a generated fi
 
 | Source | Generated |
 | --- | --- |
-| `tokens/tokens.json` | `tokens/tokens.css`, `tokens/theme.css`, the tables in `skills/vlab-brand/color.md`, the palette in `README.md` and its swatches in `.github/readme/`, `templates/project/brand/sign-readme.svg` |
+| `tokens/tokens.json` | `tokens/tokens.css`, `tokens/theme.css`, the tables in `skills/vlab-brand/color.md`, the scale in `skills/vlab-brand/typography.md`, the palette in `README.md` and its swatches in `.github/readme/`, `templates/project/brand/sign-readme.svg` |
 | `assets/stamps/*.svg` | The stamp previews in `.github/readme/` |
 | `assets/logo.svg` | `.github/readme/logo.svg`, the Logo on `ground` for the README |
 
