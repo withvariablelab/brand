@@ -1,5 +1,11 @@
 # @variablelab/brand
 
+## 0.3.0
+
+### Minor Changes
+
+- [#7](https://github.com/withvariablelab/brand/pull/7) [`16b4e3b`](https://github.com/withvariablelab/brand/commit/16b4e3bfde93c0dbd612b8c0a4b5af237f7aadf4) Thanks [@rqbazan](https://github.com/rqbazan)! - The type scale is tokens. `tokens.css` defines `--vlab-type-<step>-size`, `-line-height`, `-weight`, `-tracking` and `-family` for each step of the scale in `typography.md`, `theme.css` adds each step to Tailwind as `text-<step>`, and `tokens.json` holds the scale under `type`. The step `inline code` is now spelled `inline-code`, as its tokens are.
+
 ## 0.2.1
 
 ### Patch Changes
