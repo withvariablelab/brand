@@ -1,6 +1,7 @@
 // Writes every generated file in this repo from its source:
 //   tokens/tokens.json  → tokens/tokens.css, tokens/theme.css,
-//                         the tables in skills/vlab-brand/color.md (an installed skill can't read tokens.json),
+//                         the tables in skills/vlab-brand/color.md and the scale in typography.md
+//                         (an installed skill can't read tokens.json),
 //                         the palette in README.md and its swatches in .github/readme/,
 //                         templates/project/brand/sign-readme.svg
 //   assets/stamps/*.svg → the stamp previews in .github/readme/
@@ -12,7 +13,9 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 
 type Token = { value: string; use: string; vesper?: string };
 type Group = "color" | "syntax" | "font";
-type Tokens = Record<Group, Record<string, Token>>;
+// A step of the type scale. A step with no line height keeps the one it sits in.
+type Step = { size: string; "line-height"?: string; weight: string; tracking: string; family: "sans" | "mono" };
+type Tokens = Record<Group, Record<string, Token>> & { type: Record<string, Step> };
 
 const root = new URL("../", import.meta.url);
 const read = (path: string) => readFileSync(new URL(path, root), "utf8");
@@ -29,10 +32,29 @@ const each = (render: (group: Group, name: string, token: Token) => string) =>
     Object.entries(tokens[group]).map(([name, token]) => render(group, name, token)),
   );
 
+const steps = Object.entries(tokens.type);
+// Each property of a step is --vlab-type-<step>-<property>, its family a var() of the font token.
+const stepProperties = (name: string, step: Step) =>
+  Object.entries({ ...step, family: `var(--vlab-font-${step.family})` }).map(
+    ([property, value]) => `  --vlab-type-${name}-${property}: ${value};`,
+  );
+// In Tailwind a step is text-<step>: the size, with its line height, tracking and weight. The family goes beside it.
+const tailwindText = { size: "", "line-height": "--line-height", tracking: "--letter-spacing", weight: "--font-weight" };
+const stepTheme = (name: string, step: Step) =>
+  Object.entries(tailwindText)
+    .filter(([property]) => property in step)
+    .map(([property, suffix]) => `  --text-${name}${suffix}: var(--vlab-type-${name}-${property});`);
+
 outputs["tokens/tokens.css"] =
-  `${cssHeader}:root {\n${each((group, name, token) => `  --vlab-${cssName(group, name)}: ${token.value};`).join("\n")}\n}\n`;
+  `${cssHeader}:root {\n${[
+    ...each((group, name, token) => `  --vlab-${cssName(group, name)}: ${token.value};`),
+    ...steps.flatMap(([name, step]) => stepProperties(name, step)),
+  ].join("\n")}\n}\n`;
 outputs["tokens/theme.css"] =
-  `${cssHeader}@import "./tokens.css";\n\n@theme inline {\n${each((group, name) => `  --${themeName(group, name)}: var(--vlab-${cssName(group, name)});`).join("\n")}\n}\n`;
+  `${cssHeader}@import "./tokens.css";\n\n@theme inline {\n${[
+    ...each((group, name) => `  --${themeName(group, name)}: var(--vlab-${cssName(group, name)});`),
+    ...steps.flatMap(([name, step]) => stepTheme(name, step)),
+  ].join("\n")}\n}\n`;
 
 // README images: a swatch per color, and each Class stamp in ink on a ground square
 
@@ -81,6 +103,18 @@ const blocks: Record<string, Record<string, string>> = {
     syntax: table(
       ["Token", "Value", "Vesper", "Use"],
       rows("syntax", (name, t) => [name, `\`${t.value}\``, `\`${t.vesper}\``, t.use]),
+    ),
+  },
+  "skills/vlab-brand/typography.md": {
+    scale: table(
+      ["Step", "Size / line height", "Weight", "Tracking", "Family"],
+      steps.map(([name, s]) => [
+        name,
+        s["line-height"] ? `${s.size} / ${s["line-height"]}` : s.size,
+        s.weight,
+        s.tracking === "0" ? "0" : `\`${s.tracking}\``,
+        s.family,
+      ]),
     ),
   },
   "README.md": {
