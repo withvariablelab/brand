@@ -1,5 +1,11 @@
 # @variablelab/brand
 
+## 0.4.0
+
+### Minor Changes
+
+- [#15](https://github.com/withvariablelab/brand/pull/15) [`c2c9e48`](https://github.com/withvariablelab/brand/commit/c2c9e4892311b5371505d30aa1dc71831823203d) Thanks [@rqbazan](https://github.com/rqbazan)! - Add the `readme.md` chapter: the rules every README follows, the structure of each kind of README, and the `docs/contributing.md` and `docs/development.md` every repository keeps. `templates/project/` now holds a README and those two docs beside the `brand/` folder. `logo.md` says which Logo a README links, and `project-brand.md` that a README's `<img>` takes a width and no height.
+
 ## 0.3.1
 
 ### Patch Changes
