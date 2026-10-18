@@ -170,7 +170,7 @@ What matters only to whoever works in the repository goes to `docs/development.m
 - Taken from `package.json`: the requirement.
 - Linked, never copied: the docs, the CLI reference, the Project's page and the license.
 - A list that grows, such as a monorepo's plugins or examples, lives in one README. The others link it, and no doc counts its items.
-- The README is the source of the Project's page, never the other way round.
+- The Project's page takes its text from the README's opening and its example from Usage. The README never copies them back.
 
 ## docs/contributing.md and docs/development.md
 

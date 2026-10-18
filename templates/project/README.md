@@ -20,7 +20,7 @@ It needs <the requirement, from engines or the peers in package.json>.
 
 ## Usage
 
-<The smallest example that runs as written.>
+<The smallest example, one that runs as written.>
 
 ## Documentation
 

@@ -1,6 +1,6 @@
 # Contributing
 
-<project> takes <what it takes>. To set up the repo and run its checks, see the [development guide](development.md).
+<project> takes <what it takes, in a few words>. To set up the repo and run its checks, see the [development guide](development.md).
 
 ## Issues
 
