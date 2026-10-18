@@ -7,7 +7,7 @@ File: `assets/logo.svg` in the brand repository, `viewBox 0 0 402.02 468.12`.
 ## Use
 
 - Green, on `ground`, at its own proportions: scale it, never stretch it.
-- The Signature is the Logo with "Variable Land" beside it, the Logo on the left, the name in IBM Plex Sans 500 in `ink`. The name is set as text each time; there is no wordmark file.
+- The Signature is the Logo with "Variable Land" beside it, the Logo on the left, the name in IBM Plex Sans 500 in `ink`. The name is set as text each time; there is no wordmark file. In a README, the name takes the site's font and link color, because a README can't set either ([readme.md](readme.md)).
 - Smallest size: 16px wide (16×18).
 
 ## Avoid
@@ -20,3 +20,5 @@ File: `assets/logo.svg` in the brand repository, `viewBox 0 0 402.02 468.12`.
 ## Linking it
 
 From outside the brand repository, link a pinned version so it never changes under a page: `https://cdn.jsdelivr.net/npm/@variablelab/brand@<version>/assets/logo.svg`. jsDelivr caches a pinned version for good and a range for days.
+
+In a README, link the Logo on a `ground` square, the one the brand repository's README uses, pinned to a tag: `https://cdn.jsdelivr.net/gh/withvariablelab/brand@v0.3.1/.github/readme/logo.svg`. `assets/logo.svg` has no background, and GitHub's light theme would show it on white. When the Logo changes, the tag changes in every README in the same pass. [readme.md](readme.md) has the Signature's markup.

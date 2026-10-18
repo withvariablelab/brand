@@ -7,7 +7,8 @@ Variable Lab's brand guideline, design tokens and shared assets, the package `@v
 - `skills/vlab-brand/`: the guideline, as an Agent Skill. `SKILL.md` routes each task to one chapter; `glossary.md` holds the terms.
 - `tokens/tokens.json`: the only source of colors, fonts and the type scale.
 - `assets/`: the Logo and the Class stamps. No Project's Sign lives here.
-- `templates/project/brand/`: what a Project copies into its own `brand/` folder.
+- `templates/project/`: what a new Project copies: its README, its `docs/` and its `brand/` folder.
+- `docs/`: this repository's contributing and development guides, for people.
 - `.github/readme/`: the images in the README. Generated.
 
 ## Rules
@@ -35,7 +36,7 @@ mise installs node and pnpm, locally and in CI: run `mise install`, then `pnpm i
 
 ## Releasing
 
-- Changes to `skills/`, `tokens/`, `assets/`, `templates/`, `BRAND-USE.md` or the `exports` in `package.json` carry a changeset: run `pnpm changeset`. Changes to the README, LICENSE, this file or CI don't.
+- Changes to `skills/`, `tokens/`, `assets/`, `templates/`, `BRAND-USE.md` or the `exports` in `package.json` carry a changeset: run `pnpm changeset`. Changes to the README, LICENSE, `docs/`, this file or CI don't.
 - Major: a token, an export path or an asset path is removed or renamed. Minor: one is added, or a chapter. Patch: a value or a text changes.
 - Merging a change with a changeset to `main` opens or updates the "chore: update versions" pull request. Merging that pull request publishes to npm through trusted publishing.
 - Agents install the skill from `main` on GitHub, not from npm, so a change to `skills/` reaches them when it merges, before any release.

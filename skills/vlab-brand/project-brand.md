@@ -40,3 +40,5 @@ https://raw.githubusercontent.com/withvariablelab/<repo>/HEAD/<package dir>/bran
 ```
 
 npm rewrites a relative image path to this same URL, and GitHub resolves a relative path against the branch. Writing it absolute keeps both explicit.
+
+Give the `<img>` a `width` and no `height`: with both on an absolute URL, GitHub rounds the corners and puts a gray background behind the Sign. The Sign heads the README at 64px, above the Project's name, which links to the Project's page. [readme.md](readme.md) has the header's markup.
