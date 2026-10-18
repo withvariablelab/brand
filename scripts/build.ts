@@ -93,9 +93,18 @@ outputs[".github/readme/logo.svg"] =
 
 const table = (head: string[], rows: string[][]) =>
   [head, head.map(() => "---"), ...rows].map((cells) => `| ${cells.join(" | ")} |`).join("\n");
-const swatch = (group: Group, name: string) => `<img src="${swatchPath(group, name)}" width="48" height="24" alt="">`;
 const rows = (group: Group, render: (name: string, token: Token) => string[]) =>
   Object.entries(tokens[group]).map(([name, token]) => render(name, token));
+// The README is also the npm page, so its images are absolute. They carry a width and no height:
+// GitHub rounds an absolute image that has both. A list, not a table, so the swatches never shrink.
+const readmeImage = (path: string) => `https://raw.githubusercontent.com/withvariablelab/brand/HEAD/${path}`;
+const swatches = (group: Group) =>
+  Object.entries(tokens[group])
+    .map(
+      ([name, t]) =>
+        `- <img src="${readmeImage(swatchPath(group, name))}" width="48" alt="" align="absmiddle">&nbsp;\`${name}\` \`${t.value}\`. ${t.use}`,
+    )
+    .join("\n");
 
 const blocks: Record<string, Record<string, string>> = {
   "skills/vlab-brand/color.md": {
@@ -118,8 +127,8 @@ const blocks: Record<string, Record<string, string>> = {
     ),
   },
   "README.md": {
-    color: table(["", "Token", "Value", "Use"], rows("color", (name, t) => [swatch("color", name), `\`${name}\``, `\`${t.value}\``, t.use])),
-    syntax: table(["", "Token", "Value", "Use"], rows("syntax", (name, t) => [swatch("syntax", name), `\`${name}\``, `\`${t.value}\``, t.use])),
+    color: swatches("color"),
+    syntax: swatches("syntax"),
   },
 };
 

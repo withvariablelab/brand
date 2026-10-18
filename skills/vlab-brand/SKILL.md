@@ -20,5 +20,6 @@ Read the chapter the task touches:
 | Write any public text | [voice.md](voice.md) |
 | Use or draw a UI icon, set a shape beside text | [iconography.md](iconography.md) |
 | Give a Project its Sign, set up its `brand/` folder | [project-brand.md](project-brand.md) |
+| Write or restructure a README, or a repository's contributing and development docs | [readme.md](readme.md) |
 
-Beyond this folder, the brand repository (`github.com/withvariablelab/brand`, the package `@variablelab/brand`) holds the tokens (`tokens/`), the Logo and the Class stamps (`assets/`), the template for a Project's `brand/` folder (`templates/project/brand/`) and the terms of use for the marks (`BRAND-USE.md`).
+Beyond this folder, the brand repository (`github.com/withvariablelab/brand`, the package `@variablelab/brand`) holds the tokens (`tokens/`), the Logo and the Class stamps (`assets/`), what a new Project copies (`templates/project/`: its README, its docs and its `brand/` folder) and the terms of use for the marks (`BRAND-USE.md`).
