@@ -1,11 +1,11 @@
 ---
 name: vlab-brand
-description: Variable Lab's brand guideline - principles, Logo, color, type, voice, UI icons and how a Project's Sign is drawn. Use before designing anything public, writing public copy (a README, a page, an image) or giving a Project its Sign.
+description: Variable Lab's brand guideline - principles, Logo, color, type, voice, UI icons and how a Project's Sign is drawn - for Variable Lab and its open source Projects only. Use before designing anything public for them, writing their public copy (a README, a page, an image) or giving a Project its Sign. Variable Land's own products have their own brand and don't use this one.
 ---
 
 # Variable Lab brand
 
-Variable Lab is Variable Land's open source arm. This guideline holds its rules for anything public: sites, READMEs, package pages, images and icons. It states rules, never one Project's specifics: a Project's Sign lives in that Project's repository, and a site's page specs live in that site.
+Variable Lab is Variable Land's open source arm. This guideline is for Variable Lab and its open source Projects only, and holds their rules for anything public: sites, READMEs, package pages, images and icons. Variable Land's own products have their own brand and don't use this one. The guideline states rules, never one Project's specifics: a Project's Sign lives in that Project's repository, and a site's page specs live in that site.
 
 Terms in capitals are defined in [glossary.md](glossary.md).
 
