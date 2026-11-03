@@ -13,7 +13,7 @@ How to work on the brand repository in a clone. The [contributing guide](contrib
 
 ## Setup
 
-[mise](https://mise.jdx.dev) pins Node 24 and pnpm in `mise.toml`, with checksums in `mise.lock`:
+[mise](https://mise.jdx.dev) 2026.10.19 or later pins Node 24 and pnpm 12 in `mise.toml`, with checksums in `mise.lock`:
 
 ```sh
 mise install
