@@ -13,12 +13,14 @@ How to work on the brand repository in a clone. The [contributing guide](contrib
 
 ## Setup
 
-[mise](https://mise.jdx.dev) 2026.10.19 or later pins Node 24 and pnpm 12 in `mise.toml`, with checksums in `mise.lock`:
+[mise](https://mise.jdx.dev) 2026.10.19 or later pins Node 24, pnpm 12 and [gitleaks](https://github.com/gitleaks/gitleaks) in `mise.toml`, with checksums in `mise.lock`:
 
 ```sh
 mise install
 pnpm install
 ```
+
+`pnpm install` also installs the git hooks: lefthook's postinstall writes them. With `CI` set, that postinstall skips them, so after a `CI=1 pnpm install` run `pnpm lefthook install` to add them.
 
 After changing a version in `mise.toml`, run `mise lock` and commit both files.
 
@@ -44,5 +46,6 @@ Inside Markdown, a generated block sits between `<!-- build:<name> -->` and `<!-
 ## CI
 
 - **On each pull request to `main`:** `pnpm check` (CI), and zizmor on the workflows (Workflow audit).
+- **Git hooks** ([lefthook](https://lefthook.dev)): on each commit, `lefthook.yml` runs gitleaks on the staged changes and `pnpm check`, in parallel.
 - **On each push to `main`:** the release job opens or updates the "chore: update versions" pull request, or publishes when that pull request merges.
 - **Every Monday:** `pnpm audit`, which keeps an issue labeled `dependency-audit` open while it finds known vulnerabilities (Dependency audit).

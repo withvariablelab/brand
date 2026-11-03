@@ -60,3 +60,5 @@ jobs:
           pr-title: "chore: update versions"
           publish-script: pnpm changeset publish
           github-token: ${{ steps.app-token.outputs.token }}
+        env:
+          LEFTHOOK: 0

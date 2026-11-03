@@ -32,7 +32,7 @@ Inside Markdown, a generated block sits between `<!-- build:<name> -->` and `<!-
 
 ## Tools
 
-mise installs node and pnpm, locally and in CI: run `mise install`, then `pnpm install`. `mise.toml` names the versions and `mise.lock` pins them with checksums; after changing a version in `mise.toml`, run `mise lock` and commit both.
+mise installs node, pnpm and gitleaks, locally and in CI: run `mise install`, then `pnpm install`, which also installs the git hooks in `lefthook.yml`. `mise.toml` names the versions and `mise.lock` pins them with checksums; after changing a version in `mise.toml`, run `mise lock` and commit both.
 
 ## Releasing
 
