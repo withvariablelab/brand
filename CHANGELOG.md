@@ -1,5 +1,11 @@
 # @variablelab/brand
 
+## 0.4.2
+
+### Patch Changes
+
+- [#21](https://github.com/withvariablelab/brand/pull/21) [`2547939`](https://github.com/withvariablelab/brand/commit/25479394ffb272b4a9b0b8e149a2f588d4854add) Thanks [@rqbazan](https://github.com/rqbazan)! - The Logo chapter and the glossary say that the Logo is Variable Land's mark, that Variable Lab signs everything it publishes with it in the Signature, and that it comes in green only, with no second version.
+
 ## 0.4.1
 
 ### Patch Changes
