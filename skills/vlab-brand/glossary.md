@@ -13,7 +13,7 @@ Variable Land's open source arm: its published Projects and this guideline. It n
 _Avoid_: Variable Labs, VL
 
 **Logo**:
-The hexagon with the V, in green. It is Variable Land's mark, and Variable Lab signs with it. No Project uses it.
+The hexagon with the V, in green only. It is Variable Land's mark, and Variable Lab signs everything it publishes with it, in the Signature. No Project uses it.
 _Avoid_: sign, wordmark, icon
 
 **Signature**:

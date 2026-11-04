@@ -1,6 +1,6 @@
 # Logo
 
-The hexagon with the V, in green (`logo`, `#36d399`), its only color. It is Variable Land's mark, and Variable Lab signs everything it publishes with it.
+The hexagon with the V, in green only (`logo`, `#36d399`). It is Variable Land's mark, and Variable Lab signs everything it publishes with it, in the Signature.
 
 File: `assets/logo.svg` in the brand repository, `viewBox 0 0 402.02 468.12`.
 
