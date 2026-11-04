@@ -1,5 +1,11 @@
 # @variablelab/brand
 
+## 0.4.1
+
+### Patch Changes
+
+- [#17](https://github.com/withvariablelab/brand/pull/17) [`1ba5fa3`](https://github.com/withvariablelab/brand/commit/1ba5fa3bb40fe2dab74c46333c91615ae15d35f6) Thanks [@rqbazan](https://github.com/rqbazan)! - The `vlab-brand` skill says, in its description and its opening, that the guideline is for Variable Lab and its open source Projects only, and that Variable Land's own products use their own brand.
+
 ## 0.4.0
 
 ### Minor Changes
